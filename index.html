@@ -802,14 +802,16 @@
 
 				<div class="col-lg-4 col-md-4 padbot30 foot_about_block">
 
-					<!--< CONTACT FORM
+					<!--< CONTACT FORM -->
 					<div class="span9 contact_form">
 						<div id="note"></div>
 						<div id="fields">
-							<form id="contact-form-face" class="clearfix" action="#">
+							<form id="contact-form-face" class="clearfix" name="contact" method="POST" netlify>
 								<input type="text" name="name" value="Ваше имя" onFocus="if (this.value == 'Ваше имя') this.value = '';" onBlur="if (this.value == '') this.value = 'Ваше имя';" />
+								<input type="text" name="phone" value="Ваш телефон" onFocus="if (this.value == 'Ваш телефон') this.value = '';" onBlur="if (this.value == '') this.value = 'Ваш телефон';" />
 								<textarea name="message" value="Сообщение" onFocus="if (this.value == 'Сообщение') this.value = '';" onBlur="if (this.value == '') this.value = 'Сообщение';"></textarea>
-								<input class="contact_btn" type="submit" value="Send message" />
+								<div data-netlify-recaptcha></div>
+								<input class="contact_btn" type="submit" value="Отправить сообщение" />
 							</form>
 						</div>
 					</div><!-- //CONTACT FORM -->
