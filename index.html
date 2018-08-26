@@ -807,7 +807,10 @@
 					<div class="span9 contact_form">
 						<div id="note"></div>
 						<div id="fields">
-							<form id="contact-form-face" class="clearfix" name="contact" method="POST" netlify>
+							<form id="contact-form-face" class="clearfix" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+								<p class="hidden">
+    							<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  							</p>
 								<input type="text" name="name" value="Ваше имя" onFocus="if (this.value == 'Ваше имя') this.value = '';" onBlur="if (this.value == '') this.value = 'Ваше имя';" />
 								<input type="text" name="phone" value="Телефонный номер или Email" onFocus="if (this.value == 'Телефонный номер или Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Телефонный номер или Email';" />
 								<textarea name="message" value="Сообщение" onFocus="if (this.value == 'Сообщение') this.value = '';" onBlur="if (this.value == '') this.value = 'Сообщение';"></textarea>
